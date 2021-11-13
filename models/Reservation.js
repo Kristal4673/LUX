@@ -20,7 +20,7 @@ Reservation.init(
       allowNull: false,
     },
     car_id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       references: {
         model: "car",
         key: "id",

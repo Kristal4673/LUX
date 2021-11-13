@@ -1,6 +1,7 @@
 const seedUsers = require("./user-seeds");
-const seedCars = require("./car-seeds");
+const seedCars = require("./car-seeds.json");
 const seedReservations = require("./reservation-seeds");
+const { Car } = require("../models");
 
 const sequelize = require("../config/connection");
 
@@ -10,7 +11,9 @@ const seedAll = async () => {
   await seedUsers();
   console.log("\n----- USERS SEEDED -----\n");
 
-  await seedCars();
+  const seededCars = await Car.bulkCreate(seedCars, {
+    returning: true,
+  });
   console.log("\n----- CARS SEEDED -----\n");
 
   await seedReservations();
