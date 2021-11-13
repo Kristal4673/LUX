@@ -29,11 +29,11 @@ User.init(
       },
     },
     phone: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         isNumeric: true,
-        len: [10],
+        // len: [10],
       },
     },
     address: {
