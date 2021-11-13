@@ -17,13 +17,13 @@ router.get("/", async (req, res) => {
       // ],
       // }
       ();
-
+    console.log(req.session);
     // Serialize data so the template can read it
     const cars = dbCarData.map((car) => car.get({ plain: true }));
     // Pass serialized data and session flag into template
     res.render("homepage", {
       cars,
-      // loggedIn: req.session.loggedIn,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     console.log(err);
@@ -81,10 +81,9 @@ router.get("/car/:id", async (req, res) => {
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect("/profile");
+    res.redirect("/");
     return;
   }
-
   res.render("login");
 });
 
