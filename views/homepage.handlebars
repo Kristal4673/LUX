@@ -55,6 +55,23 @@
   <button class="button">Clear</button>
 </div>
 
+
+{{!-- MB: ADDED THIS JUST TO PASS DATA; NO STYLING CONSIDERED FOR THIS --}}
+<div>
+  <h1>Luxury Cars: All cars</h1>
+  {{#each cars}}
+    <a href="/car/{{id}}">
+      <p>{{year}}</p>
+<p>{{make}}</p>
+<p>{{model}}</p>
+<p>{{price}}</p>
+    </a>
+    <p>{{description}}</p>
+  {{/each}}
+</div>
+
+
+
 <div class="box">
   {{!-- Dyamically render the cars--}}
 </div>
