@@ -6,10 +6,10 @@ class Car extends Model {}
 Car.init(
   {
     id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      // autoIncrement: true,
     },
     year: {
       type: DataTypes.INTEGER,
@@ -36,15 +36,15 @@ Car.init(
     },
     color: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     license_plate: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     mileage: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // allowNull: false,
       validate: {
         isNumeric: true,
       },
