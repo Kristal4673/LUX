@@ -1,4 +1,2 @@
 DROP DATABASE IF EXISTS lux_db;
 CREATE DATABASE lux_db;
-
-USE lux_db;
