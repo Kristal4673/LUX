@@ -11,8 +11,13 @@ Reservation.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    has_reservation: {
-      type: DataTypes.BOOLEAN,
+    starting_date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    ending_date: {
+      type: DataTypes.DATE,
+      allowNull: false,
     },
     car_id: {
       type: DataTypes.INTEGER,

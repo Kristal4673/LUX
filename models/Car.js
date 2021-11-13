@@ -34,6 +34,21 @@ Car.init(
         isNumeric: true,
       },
     },
+    color: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    license_plate: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    mileage: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        isNumeric: true,
+      },
+    },
     description: {
       type: DataTypes.STRING,
     },
@@ -41,6 +56,9 @@ Car.init(
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
+    },
+    has_reservation: {
+      type: DataTypes.BOOLEAN,
     },
     user_id: {
       type: DataTypes.INTEGER,
