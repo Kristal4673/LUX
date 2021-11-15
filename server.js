@@ -5,6 +5,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const { hasSubscribers } = require('diagnostics_channel');
 
 
 // import { sequelize } from './config/connection';
@@ -15,6 +16,25 @@ const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
+
+//handlbar helper function
+// exphbs.Handlebars.registerHelper('if_even', function(conditional, options){
+//   if((conditional % 2) == 0){
+//     return options.fn(this);
+//   } else {
+//     return options.inverse(this);
+//   }
+// });
+
+// exphbs.ExpressHandlebars.
+
+// exphbs.Handlebars.registerHelper('if_odd', function(conditional, options){
+//   if((conditional % 2) == 1){
+//     return options.fn(this);
+//   } else {
+//     return options.inverse(this);
+//   }
+// });
 
 const sess = {
   secret: 'Super secret secret',
