@@ -6,7 +6,7 @@ const { Car } = require("../models");
 const sequelize = require("../config/connection");
 
 const seedAll = async () => {
-  try{
+  try{ //Added try/catch to handle errors and view then in console
   await sequelize.sync({ force: true });
   console.log("\n----- DATABASE SYNCED -----\n");
 
@@ -23,7 +23,7 @@ const seedAll = async () => {
 
   process.exit(0);
 } catch(err){
-  console.log(err);
+  console.log(err);//console.log the error if there is one
 }
 };
 
