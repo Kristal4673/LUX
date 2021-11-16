@@ -1,4 +1,5 @@
 const { User } = require("../models");
+const userData = require('./userData.json');//added incase use `userData.json`
 
 const usersData = [
   // {
@@ -9,6 +10,6 @@ const usersData = [
   // }
 ];
 
-const seedUsers = () => User.bulkCreate(usersData);
+const seedUsers = () => User.bulkCreate(userData);
 
 module.exports = seedUsers;
