@@ -1,15 +1,16 @@
 <html lang="en">
 
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LUX</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-</head>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUX</title>
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
 
   <body>
     <div class="flex-column justify-space-around">
@@ -21,11 +22,11 @@
         <nav>
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
-            <a href="/">User logged-in</a>
+            {{! <a href="/">User logged-in</a> }}
             |
-            <button class="no-button" id="logout">logout</button>
+            <button class="no-button" id="logout">Logout</button>
           {{else}}
-            <a href="/login">login</a>
+            <a href="/login">Login/Sign-up</a>
           {{/if}}
         </nav>
       </header>
@@ -40,7 +41,7 @@
 
     <!-- Render script for logged in users only -->
     {{#if logged_in}}
-      <script src="js/logout.js"></script>
+      <script src="/js/logout.js"></script>
     {{/if}}
   </body>
 

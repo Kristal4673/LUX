@@ -1,3 +1,5 @@
+// const { response } = require("express");
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -15,13 +17,14 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      // document.location.replace("/");
+      document.location.replace("/");
       document.querySelector("#logged-in-link").style.display = "block";
       document.querySelector(".login-form").style.display = "none";
       document.querySelector(".signup-form").style.display = "none";
     } else {
       alert(response.statusText);
     }
+    console.log(response);
   }
 };
 
@@ -39,7 +42,7 @@ const signupFormHandler = async (event) => {
 
   const license = document.querySelector("#license-signup").value.trim();
 
-  const insurance = document.querySelectornpm("#insurance-signup").value.trim();
+  const insurance = document.querySelector("#insurance-signup").value.trim();
 
   if (
     name &&
