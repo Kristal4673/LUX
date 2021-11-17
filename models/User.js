@@ -30,7 +30,7 @@ User.init(
     },
     phone: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
       validate: {
         isNumeric: true,
         // len: [10],
@@ -38,11 +38,11 @@ User.init(
     },
     address: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     age: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // allowNull: false,
       validate: {
         isNumeric: true,
         len: [2],
@@ -50,12 +50,12 @@ User.init(
     },
     license: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
       unique: true,
     },
     insurance: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     password: {
       type: DataTypes.STRING,

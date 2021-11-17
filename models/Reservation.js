@@ -11,13 +11,16 @@ Reservation.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    starting_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    ending_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
+    // starting_date: {
+    //   type: DataTypes.DATE,
+    //   allowNull: false,
+    // },
+    // ending_date: {
+    //   type: DataTypes.DATE,
+    //   allowNull: false,
+    // },
+    description: {
+      type: DataTypes.STRING,
     },
     car_id: {
       type: DataTypes.STRING,

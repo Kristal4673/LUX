@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User, Car } = require("../models");
+const { User, Car, Reservation } = require("../models");
 const withAuth = require("../utils/auth");
 
 // MB: getting all cars
@@ -58,25 +58,26 @@ router.get("/car/:id", async (req, res) => {
   }
 });
 
-// // Use withAuth middleware to prevent access to route
-// router.get("/profile", withAuth, async (req, res) => {
-//   try {
-//     // Find the logged in user based on the session ID
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ["password"] },
-//       include: [{ model: Project }],
-//     });
+// Use withAuth middleware to prevent access to reservation
+router.get("/reservation", withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ["password"] },
+      // MB: PENDING ADDING RESERVATION FIELDS
+      include: [{ model: Reservation, User, Car }],
+    });
 
-//     const user = userData.get({ plain: true });
+    const user = userData.get({ plain: true });
 
-//     res.render("profile", {
-//       ...user,
-//       logged_in: true,
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    res.render("reservation", {
+      ...user,
+      logged_in: true,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
@@ -87,8 +88,8 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get('/signin', (req, res) =>{
-  res.render('signin')
+router.get("/signin", (req, res) => {
+  res.render("signin");
 });
 
 module.exports = router;
