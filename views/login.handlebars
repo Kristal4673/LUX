@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-md-6">
     <h2>Login</h2>
-    <div id="logged-in-link" style="display: none;">
+    {{! <div id="logged-in-link" style="display: none;">
       <a href="/">You are now logged in. Click here to go home.</a>
-    </div>
+    </div> }}
     <form class="form login-form">
       <div class="form-group">
         <label for="email-login">email:</label>
@@ -34,6 +34,7 @@
         <label for="password-signup">password:</label>
         <input class="form-input" type="password" id="password-signup" />
       </div>
+      {{!       
       <div class="form-group">
         <label for="phone-signup">phone:</label>
         <input class="form-input" type="number" id="phone-signup" />
@@ -56,7 +57,7 @@
       <div class="form-group">
         <label for="insurance-signup">insurance:</label>
         <input class="form-input" type="text" id="insurance-signup" />
-      </div>
+      </div> }}
 
       <div class="form-group">
         <button class="btn btn-primary" type="submit">signup</button>

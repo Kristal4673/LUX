@@ -1,0 +1,139 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>You are one step closer to your reservation, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Provide your reservation details:</h3>
+
+    {{! User: name, email, phone, address, age, license, insurance}}
+    {{! Pending Reservation: starting_date, ending_date, car_id ...  }}
+
+    <form class="form new-reservation-form">
+      <div class="form-group">
+        <label for="reservation-name">Name as it appears in your driver's license:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="reservation-name"
+          name="reservation-name"
+          placeholder="First and last name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="reservation-email">Email:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="reservation-email"
+          name="reservation-email"
+          placeholder="In case we need to reach you"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="reservation-phone">Phone number:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="reservation-phone"
+          name="reservation-phone"
+          placeholder="10-digit phone number"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="reservation-address">Address:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="reservation-address"
+          name="reservation-address"
+          placeholder="Use your billing address"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="reservation-age">Age:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="reservation-age"
+          name="reservation-age"
+          placeholder="age"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="reservation-license">License Number:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="reservation-license"
+          name="reservation-license"
+          placeholder="For example: TX-12345678"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="reservation-insurance">Insurance:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="reservation-insurance"
+          name="reservation-insurance"
+          placeholder="Include company and policy number "
+        />
+      </div>
+
+{{!-- MARTIN TESTING car_id here --}}
+ {{!-- <div class="form-group">
+   <p>Car ID: {{car.id}}</p>
+      </div> --}}
+
+
+      <div class="form-group">
+        <label for="reservation-desc">Let us know the ID of the desired car and the
+          dates of reservation:</label>
+        <textarea
+          class="form-input"
+          id="reservation-desc"
+          name="reservation-desc"
+          placeholder="Write message to reservations team here"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+      </div>
+    </form>
+  </div>
+
+
+  
+{{!-- 
+  {{#if projects.length}}
+    <div class="col-md-6 project-list">
+      <h3>Current Projects:</h3>
+
+      {{#each projects as |project|}}
+        <div class="row mb-2">
+          <div class="col-md-8">
+            <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+          </div>
+          <div class="col-md-4">
+            <button
+              class="btn btn-sm btn-danger"
+              data-id="{{project.id}}"
+            >DELETE</button>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+</div> --}}
+
+<script src="./js/reservation.js"></script>
