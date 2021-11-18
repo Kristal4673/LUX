@@ -6,24 +6,24 @@ const withAuth = require("../utils/auth");
 router.get("/", async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const dbCarData = await Car
-      .findAll
-      // {
-      // include: [
-      //   {
-      //     model: User,
-      //     attributes: ['name'],
-      //   },
-      // ],
-      // }
-      ();
-    console.log(req.session);
+    console.log("88888888888888888888888888888888888888");
+    const dbCarData = await Car.findAll();
+    // {
+    // include: [
+    //   {
+    //     model: User,
+    //     attributes: ['name'],
+    //   },
+    // ],
+    // }
+
+    console.log("This is logged in", req.session.logged_in);
     // Serialize data so the template can read it
     const cars = dbCarData.map((car) => car.get({ plain: true }));
     // Pass serialized data and session flag into template
     res.render("homepage", {
       cars,
-      logged_in: req.session.logged_in,
+      logged_in: req.session.logged_in || false,
     });
   } catch (err) {
     console.log(err);
@@ -59,25 +59,46 @@ router.get("/car/:id", async (req, res) => {
 });
 
 // Use withAuth middleware to prevent access to reservation
-router.get("/reservation", withAuth, async (req, res) => {
+router.get("/reservation/:id", withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ["password"] },
       // MB: PENDING ADDING RESERVATION FIELDS
-      include: [{ model: Reservation, User, Car }],
+      include: [{ model: Reservation, Car }],
     });
 
     const user = userData.get({ plain: true });
 
     res.render("reservation", {
       ...user,
+      carid: req.params.id,
       logged_in: true,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
+// MB: TESTING THIS ROUTE TO GET TO /success
+// Use withAuth middleware to prevent access to succesful reservation
+// router.get("/success/:id", withAuth, async (req, res) => {
+//   try {
+//     // Find the logged in user based on the session ID
+//     const reservationData = await Reservation.findByPk(req.params.id, {
+//       include: [{ model: User, Car }],
+//     });
+
+//     const reservation = reservationData.get({ plain: true });
+
+//     res.render("success", {
+//       ...reservation,
+//       logged_in: true,
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
@@ -88,8 +109,8 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/signin", (req, res) => {
-  res.render("signin");
-});
+// router.get("/signin", (req, res) => {
+//   res.render("signin");
+// });
 
 module.exports = router;
