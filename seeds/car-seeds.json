@@ -75,10 +75,10 @@
     "id": "freZeixZ7m",
     "make": "BMW",
     "year": 2021,
-    "model": "X3",
-    "type": "SUV",
+    "model": "i8",
+    "type": "coupe",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/bmw-i8"
   },
   {
     "id": "1IUIgIa5Mw",
@@ -150,7 +150,7 @@
     "model": "488 Spider",
     "type": "Convertible",
     "price": 799,
-    "image": "/images/pathfilename"
+    "image": "/images/spider488.jpg"
   },
   {
     "id": "N7vduS162x",
@@ -168,7 +168,7 @@
     "model": "SLR",
     "type": "Coupe",
     "price": 499,
-    "image": "/images/pathfilename"
+    "image": "/images/slr.jpg"
   },
   {
     "id": "6VfLtAfcP2",
@@ -195,7 +195,7 @@
     "model": "G-Class",
     "type": "SUV",
     "price": 599,
-    "image": "/images/pathfilename"
+    "image": "/images/gwagon.jpg"
   },
   {
     "id": "qcwTvAzvPk",
@@ -204,7 +204,7 @@
     "model": "R8",
     "type": "Coupe",
     "price": 399,
-    "image": "/images/pathfilename"
+    "image": "/images/r8.jpg"
   },
   {
     "id": "gQLt1rB4b8",
@@ -510,7 +510,7 @@
     "model": "Huracan",
     "type": "Coupe",
     "price": 900,
-    "image": "/images/pathfilename"
+    "image": "/images/huracan.jpg"
   },
   {
     "id": "zGchNFd63n",
@@ -555,7 +555,7 @@
     "model": "Bentayga",
     "type": "SUV",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/bentayga1.jpg"
   },
   {
     "id": "cY7lXXOD1b",
@@ -582,7 +582,7 @@
     "model": "Range Rover",
     "type": "SUV",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/rangerover"
   },
   {
     "id": "h9BxDbA148",
@@ -591,7 +591,7 @@
     "model": "Dawn",
     "type": "Convertible",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/dawn.jpg"
   },
   {
     "id": "KzorgjbbtD",
@@ -600,7 +600,7 @@
     "model": "Ghost",
     "type": "Sedan",
     "price": 900,
-    "image": "/images/pathfilename"
+    "image": "/images/ghost.jpg"
   },
   {
     "id": "vxjJPpRl1l",
@@ -609,7 +609,7 @@
     "model": "Wraith",
     "type": "Coupe",
     "price": 900,
-    "image": "/images/pathfilename"
+    "image": "/images/wraith.jpg"
   },
   {
     "id": "djSMkAaazw",
