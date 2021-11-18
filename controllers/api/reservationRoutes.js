@@ -15,8 +15,9 @@ router.post("/", withAuth, async (req, res) => {
       //   },
       // ],
     });
-
+    console.log(newReservation);
     res.status(200).json(newReservation);
+    // res.status(200).send(newReservation);
   } catch (err) {
     res.status(400).json(err);
   }

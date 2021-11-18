@@ -1,3 +1,6 @@
+// console.log(document.location);
+// console.log(window.history.back());
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -5,6 +8,7 @@ const loginFormHandler = async (event) => {
   const email = document.querySelector("#email-login").value.trim();
   const password = document.querySelector("#password-login").value.trim();
 
+  console.log(email, password);
   if (email && password) {
     // Send a POST request to the API endpoint
     const response = await fetch("/api/users/login", {
@@ -12,17 +16,24 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
-
+    console.log(response);
     if (response.ok) {
       // If successful, redirect the browser to the reservation page
-      document.location.replace("/reservation");
-      document.querySelector("#logged-in-link").style.display = "block";
-      document.querySelector(".login-form").style.display = "none";
-      document.querySelector(".signup-form").style.display = "none";
+      // document.querySelector(".login-form").style.display = "none";
+      // document.querySelector(".signup-form").style.display = "none";
+      console.log(document.location);
+      alert("Succesful log-in!");
+      document.location.replace("/");
+      // document.querySelector("#logged-in-link").style.display = "block";
+      console.log("This is response");
+      // MB: TESTING WITH A SETTIMEOUT
+      // setTimeout(() => {
+      //   document.location.replace("/reservation");
+      // }, 3000);
     } else {
-      alert(response.statusText);
+      alert("Failed to log-in");
     }
-    console.log(response);
+    // console.log(response);
   }
 };
 
@@ -70,9 +81,9 @@ const signupFormHandler = async (event) => {
     console.log(response);
     if (response.ok) {
       // MB TEST: changed /reservation to /
-      document.location.replace("/reservation");
+      document.location.replace("/");
     } else {
-      alert(response.statusText);
+      alert("Failed to sign-up");
     }
   }
 };
