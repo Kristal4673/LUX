@@ -42,10 +42,12 @@ const newFormHandler = async (event) => {
 
     if (response.ok) {
       // MB: NEED TO ESTABLISH BETTER LOCATION TO REPLACE AFTER SUBMITING RESERVATION OR WRITE A MESSAGE/ALERT SAYING RESERVATION SUCCESFUL
-      document.location.replace("/");
+      console.log(response);
+      // document.location.replace("/success/" + response.body.id);
       alert(
         "Your reservation was submitted. Check your email for follow-up steps"
       );
+      document.location.replace("/");
     } else {
       alert("Failed to create reservation");
     }
