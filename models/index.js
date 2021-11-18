@@ -10,4 +10,12 @@ Reservation.belongsTo(User, {
   foreignKey: "user_id",
 });
 
+User.hasMany(Car, {
+  foreignKey: "user_id",
+});
+
+Car.belongsTo(User, {
+  foreignKey: "user_id",
+});
+
 module.exports = { User, Car, Reservation };

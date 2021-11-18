@@ -22,7 +22,8 @@ const loginFormHandler = async (event) => {
       // document.querySelector(".login-form").style.display = "none";
       // document.querySelector(".signup-form").style.display = "none";
       console.log(document.location);
-      alert("Succesful log-in!");
+      alert("You have succesfully logged in!");
+
       document.location.replace("/");
       // document.querySelector("#logged-in-link").style.display = "block";
       console.log("This is response");
@@ -31,7 +32,7 @@ const loginFormHandler = async (event) => {
       //   document.location.replace("/reservation");
       // }, 3000);
     } else {
-      alert("Failed to log-in");
+      alert("Failed to log in. Please check your email and password");
     }
     // console.log(response);
   }
@@ -80,10 +81,13 @@ const signupFormHandler = async (event) => {
     });
     console.log(response);
     if (response.ok) {
+      alert("You have succesfully registered!");
       // MB TEST: changed /reservation to /
       document.location.replace("/");
     } else {
-      alert("Failed to sign-up");
+      alert(
+        "Your registration was not succesful. Check all the required fields"
+      );
     }
   }
 };

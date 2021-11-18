@@ -1,18 +1,15 @@
 <div class="row">
   <div class="col-auto">
-    <h2>You are one step closer to your reservation, {{name}}!</h2>
+    <p>You are one step closer to your reservation!</p>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Provide your reservation details:</h3>
-
-    {{! User: name, email, phone, address, age, license, insurance}}
-    {{! Pending Reservation: starting_date, ending_date, car_id ...  }}
+    <h3>Your information on file:</h3>
 
     <form class="form new-reservation-form">
-      <div class="form-group">
+      {{!-- <div class="form-group">
         <label for="reservation-name">Name as it appears in your driver's license:</label>
         <input
           class="form-input"
@@ -21,9 +18,13 @@
           name="reservation-name"
           placeholder="First and last name"
         />
+      </div>  --}}
+
+ <div class="form-group">
+   <p>Name: {{name}}</p>
       </div>
 
-      <div class="form-group">
+      {{!-- <div class="form-group">
         <label for="reservation-email">Email:</label>
         <input
           class="form-input"
@@ -32,7 +33,19 @@
           name="reservation-email"
           placeholder="In case we need to reach you"
         />
+      </div> --}}
+
+
+ <div class="form-group">
+   <p>Email: {{email}}</p>
       </div>
+
+ <div class="form-group">
+   <p>The ID for the car selected: {{carid}}</p>
+      </div>
+<br>
+<br>
+<p>We need the following information:</p>
 
       <div class="form-group">
         <label for="reservation-phone">Phone number:</label>
@@ -52,7 +65,7 @@
           type="text"
           id="reservation-address"
           name="reservation-address"
-          placeholder="Use your billing address"
+          placeholder="use your billing address"
         />
       </div>
 
@@ -74,7 +87,7 @@
           type="text"
           id="reservation-license"
           name="reservation-license"
-          placeholder="For example: TX-12345678"
+          placeholder="for example: TX-12345678"
         />
       </div>
 
@@ -85,24 +98,18 @@
           type="text"
           id="reservation-insurance"
           name="reservation-insurance"
-          placeholder="Include company and policy number "
+          placeholder="include company name and policy number "
         />
-      </div>
-
-{{!-- MARTIN TESTING car_id here --}}
- <div class="form-group">
-   <p>Car ID: {{carid}}</p>
       </div>
 
 
       <div class="form-group">
-        <label for="reservation-desc">Let us know the ID of the desired car and the
-          dates of reservation:</label>
+        <label for="reservation-desc">Include the dates of reservation and other requirements:</label>
         <textarea
           class="form-input"
           id="reservation-desc"
           name="reservation-desc"
-          placeholder="Write message to reservations team here"
+          placeholder="write message to reservations team here"
         ></textarea>
       </div>
 

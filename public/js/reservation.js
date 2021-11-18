@@ -1,8 +1,8 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector("#reservation-name").value.trim();
-  const email = document.querySelector("#reservation-email").value.trim();
+  // const name = document.querySelector("#reservation-name").value.trim();
+  // const email = document.querySelector("#reservation-email").value.trim();
   // const password = document.querySelector("#password-signup").value.trim();
   const phone = document.querySelector("#reservation-phone").value.trim();
   const address = document.querySelector("#reservation-address").value.trim();
@@ -14,8 +14,8 @@ const newFormHandler = async (event) => {
   const description = document.querySelector("#reservation-desc").value.trim();
 
   if (
-    name &&
-    email &&
+    // name &&
+    // email &&
     phone &&
     address &&
     age &&
@@ -26,8 +26,8 @@ const newFormHandler = async (event) => {
     const response = await fetch(`/api/reservation`, {
       method: "POST",
       body: JSON.stringify({
-        name,
-        email,
+        // name,
+        // email,
         phone,
         address,
         age,
