@@ -23,6 +23,7 @@ const loginFormHandler = async (event) => {
       // document.querySelector(".signup-form").style.display = "none";
       console.log(document.location);
       alert("You have succesfully logged in!");
+
       document.location.replace("/");
       // document.querySelector("#logged-in-link").style.display = "block";
       console.log("This is response");
