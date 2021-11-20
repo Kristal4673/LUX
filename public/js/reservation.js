@@ -1,8 +1,8 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector("#reservation-name").value.trim();
-  const email = document.querySelector("#reservation-email").value.trim();
+  // const name = document.querySelector("#reservation-name").value.trim();
+  // const email = document.querySelector("#reservation-email").value.trim();
   // const password = document.querySelector("#password-signup").value.trim();
   const phone = document.querySelector("#reservation-phone").value.trim();
   const address = document.querySelector("#reservation-address").value.trim();
@@ -14,8 +14,8 @@ const newFormHandler = async (event) => {
   const description = document.querySelector("#reservation-desc").value.trim();
 
   if (
-    name &&
-    email &&
+    // name &&
+    // email &&
     phone &&
     address &&
     age &&
@@ -26,8 +26,8 @@ const newFormHandler = async (event) => {
     const response = await fetch(`/api/reservation`, {
       method: "POST",
       body: JSON.stringify({
-        name,
-        email,
+        // name,
+        // email,
         phone,
         address,
         age,
@@ -42,10 +42,12 @@ const newFormHandler = async (event) => {
 
     if (response.ok) {
       // MB: NEED TO ESTABLISH BETTER LOCATION TO REPLACE AFTER SUBMITING RESERVATION OR WRITE A MESSAGE/ALERT SAYING RESERVATION SUCCESFUL
-      document.location.replace("/");
+      console.log(response);
+      // document.location.replace("/success/" + response.body.id);
       alert(
         "Your reservation was submitted. Check your email for follow-up steps"
       );
+      document.location.replace("/");
     } else {
       alert("Failed to create reservation");
     }

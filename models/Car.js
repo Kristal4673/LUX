@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
+const image = sequelize.define('image', )
 
 class Car extends Model {}
 
@@ -38,7 +39,7 @@ Car.init(
         isNumeric: true,
       },
     },
-    color: {
+    image: {
       type: DataTypes.STRING,
       // allowNull: false,
     },

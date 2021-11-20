@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Loop over each object in the projects array -->
 {{!-- {{#each projects as |project| }}
 <div class="row mb-4 project">
@@ -188,3 +189,195 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>LUX</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+  <section class="hero is-fullheight is-light">
+    <div class="hero-head">
+      <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+              data-target="navbarTopMain">
+            </a>
+          </div>
+          <div class="navbar-menu" id="navbarTopMain">
+            <div class="navbar-end">
+              <div class="navbar-item">
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-body  p-b-30 ">
+      <div class="container">
+        <h2 class="subtitle">
+          <span class="has-text-centered is-block">
+            Search hundreds of convertibles, coupes and SUVs for rent.
+          </span>
+        </h2>
+        <h1 class="title">
+          <span class="is-size-2 has-text-centered is-block">What are you waiting for?</span>
+        </h1>
+        <div class="columns is-centered">
+          <div class="column is-7">
+            <div class="search-form">
+              <form>
+                <div class="field has-addons has-shadow-field">
+                  <div class="control has-icons-left is-expanded">
+                    <input type="text" id="mainSearch" defaultvalue="" placeholder="Search rentals by make..."
+                      class="input is-medium">
+                  </div>
+                  <div class="control">
+                    <button type="button" class="button is-medium is-primary has-background-black">
+                      <span class="has-text-weight-semibold">Search</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <section class="hero is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="sub-section">
+              <h3 class="title is-size-4">Car Gallery</h3>
+              <h4 class="subtitle is-size-6">We've got 'em all.</h4>
+
+              {{#each cars}}
+              <div class="column">
+                <div class="card rb-card">
+                  <div class="card-image">
+                    <figure class="columns is-9by6">
+                      <img class="image" src={{image}} />
+                        {{!-- src="https://i.guim.co.uk/img/media/88912d57451780d0208d5b8da977d69c0e67349d/513_1013_4787_2873/master/4787.jpg?width=620&quality=85&auto=format&fit=max&s=067feab43f3a77d70f5300454e555826"
+                        alt="car"> --}}
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">{{year}} {{make}}</p>
+                        <p class="subtitle is-6">{{model}} {{type}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <a class="card-footer-item">Price per day: ${{price}}</a>
+                    <a href="/reservation/{{id}}" class="card-footer-item">Book Now</a>
+                  </footer>
+                </div>
+              </div>
+              
+              {{/each}}
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="sub-section">
+          <h3 class="title is-size-6">Browse By Most Popular</h3>
+          <div class="columns">
+            <div class="column">
+              <div class="card rb-card">
+                <div class="card-image">
+                  <figure class="columns is-3">
+                    <img src="https://via.placeholder.com/640x360" alt="car">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="title is-size-7">
+                    <a href="#">
+                      Aston Martin
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card rb-card">
+                <div class="card-image">
+                  <figure class="columns is-3">
+                    <img src="https://via.placeholder.com/640x360" alt="car">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="title is-size-7">
+                    <a href="#">
+                      Bentley
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card rb-card">
+                <div class="card-image">
+                  <figure class="columns is-3">
+                    <img src="https://via.placeholder.com/640x360" alt="car">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="title is-size-7">
+                    <a href="#">
+                      Lamborghini
+                    </a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <section class="hero is-medium is-light">
+    <div class="hero-body p-b-30">
+      <div class="container">
+        <div class="has-text-centered">
+          <!-- <h2 class="subtitle">
+						TAKE A DRIVE
+					</h2> -->
+          <h1 class="title">What are you waiting for?</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Include Handlebars from a CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script>
+    // compile the template
+    var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+    // execute the compiled template and print the output to the console
+    console.log(template({ doesWhat: "rocks!" }));
+  </script>
+</body>
+
+</html>
+>>>>>>> 4585c7c12ad9aea33156a3125b3d3dbe6acf6a2b
