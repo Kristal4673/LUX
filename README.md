@@ -1,37 +1,63 @@
 # LUX
-Car Rental 
+![License: MIT](https://img.shields.io/apm/l/vim-mode?style=for-the-badge)
 
+## Description:
+Node-based application for an car rental  business, which cconsists of a full stack application created with express, mysql and sequelize through model/controller/view design pattern.
 
-## User Story:
+## Table of Contents
+* [Installation](#installation)
+* [Technologies Used](#builtwith)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [License](#license)
+* [Questions](#questions)
 
-WHEN I visit the site for the first time</br>
-THEN I am presented with the homepage which includes existing vehicle posts that have been posted and navigation links.</br>
-WHEN I click on the homepage option</br> 
-THEN I am taken to the homepage.</br>
-WHEN I am the on Homepage, I can click displays a search bar and homepage displays random cars year, make, model, price, and *pictures of the car. Stating only for local DFW area only guest. Features.</br>
-WHEN I click on any other links in the navigation such as reserve now, login button, Contact Us </br>
-THEN I am prompted to either sign up or sign-in, or reserve pages etc. 
-WHEN directed to the sign-in page</br> 
-THEN I am prompted to enter my username and password as a guest.</br>
-WHEN I am signed into the site</br> 
-THEN I see navigation links for the homepage, the dashboard, and the option to log out</br>
-WHEN I click on the homepage option in the navigation</br> 
-THEN I am taken to the homepage and presented with existing vehicle posts that include the year, make, model, description, and pictures of the car.</br>
-WHEN I click on the logout option in the navigation</br> 
-THEN I am signed out of the site.
+## Installation
+To install project, simply clone repository or download documents and save them to your computer. 
+Also, type in terminal `npm i` or `npm install` to install dependency packages needed.
 
-Technologies:
+## Technologies Used:
+Node.js
+<br/>
+Express
+<br/>
+MySql
+<br/>
+Sequelize
+<br/>
+Bulma
 
-  * Application uses Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data.
+## Usage
+You will need to login to MySql and source `schema.sql`.
+To use the application, run the seeds with `npm run seed` and call `npm start` to deploy to local host.
 
-  * Folder structure meets the MVC paradigm and uses Handlebars.js as the template engine.
+## Contribution
+You are welcome to contribute to project. Please “fork” it to your Github and work from there.
 
-  * Application is backed by a MySQL database with a Sequelize ORM and protects API keys and sensitive information with environment variables.
+## License
+MIT
 
-  * Application includes user authentication (express-session and cookies).
-
-  * Application uses at least one new technology: Bulma CSS.
-
-
-
-
+      Copyright (c) 2021, Aubrey Ross, Crystal Soto, Martin Bedoya and Zaid Mahrouq.
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+      
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+      
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE.
+## Questions
+Use information below to contact me for questions or future collaboration.
+<br/>
+GitHub: https://github.com/josemartin357
+<br/>
+Email: martin.bedoya2021@gmail.com
