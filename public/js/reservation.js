@@ -1,9 +1,6 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  // const name = document.querySelector("#reservation-name").value.trim();
-  // const email = document.querySelector("#reservation-email").value.trim();
-  // const password = document.querySelector("#password-signup").value.trim();
   const phone = document.querySelector("#reservation-phone").value.trim();
   const address = document.querySelector("#reservation-address").value.trim();
   const age = document.querySelector("#reservation-age").value.trim();
@@ -14,8 +11,7 @@ const newFormHandler = async (event) => {
   const description = document.querySelector("#reservation-desc").value.trim();
 
   if (
-    // name &&
-    // email &&
+
     phone &&
     address &&
     age &&
@@ -26,8 +22,7 @@ const newFormHandler = async (event) => {
     const response = await fetch(`/api/reservation`, {
       method: "POST",
       body: JSON.stringify({
-        // name,
-        // email,
+
         phone,
         address,
         age,
@@ -54,26 +49,7 @@ const newFormHandler = async (event) => {
   }
 };
 
-// const delButtonHandler = async (event) => {
-//   if (event.target.hasAttribute("data-id")) {
-//     const id = event.target.getAttribute("data-id");
-
-//     const response = await fetch(`/api/projects/${id}`, {
-//       method: "DELETE",
-//     });
-
-//     if (response.ok) {
-//       document.location.replace("/profile");
-//     } else {
-//       alert("Failed to delete project");
-//     }
-//   }
-// };
-
 document
   .querySelector(".new-reservation-form")
   .addEventListener("submit", newFormHandler);
 
-// document
-//   .querySelector(".project-list")
-//   .addEventListener("click", delButtonHandler);
