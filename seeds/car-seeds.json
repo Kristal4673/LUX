@@ -321,7 +321,7 @@
     "model": "ES",
     "type": "Sedan",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "public\images\lexus ES1.jpg"
   },
   {
     "id": "ZZ96xi0JoH",
@@ -519,7 +519,7 @@
     "model": "Aventador",
     "type": "Convertible, Coupe",
     "price": 900,
-    "image": "/images/pathfilename"
+    "image": "/images/Aventador.jpg"
   },
   {
     "id": "f64AMDv9nH",
