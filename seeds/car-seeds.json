@@ -6,7 +6,7 @@
     "model": "DB11",
     "type": "Coupe",
     "price": 900,
-    "image": "/images/pathfilename"
+    "image": "/images/7series.jpg"
   },
   {
     "id": "ly3deBH9dp",
@@ -69,7 +69,7 @@
     "model": "M4",
     "type": "Coupe",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/7series.jpg"
   },
   {
     "id": "freZeixZ7m",
@@ -87,7 +87,7 @@
     "model": "M6 Gran Coupe",
     "type": "Coupe",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/488gtb.jpg"
   },
   {
     "id": "jVDE5tnJ3W",
@@ -96,7 +96,7 @@
     "model": "X7",
     "type": "SUV",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/bmw-i8.ppg"
   },
   {
     "id": "DEUhkh0p7D",
@@ -105,7 +105,7 @@
     "model": "Enzo",
     "type": "Convertible",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/ferrari-458-italia.jpg"
   },
   {
     "id": "7f6NuNcz5Q",
@@ -114,7 +114,7 @@
     "model": "F8 Tributo",
     "type": "Convertible",
     "price": 799,
-    "image": "/images/pathfilename"
+    "image": "/images/ferrari-488-pista-spider.jpg"
   },
   {
     "id": "nTSt68sCf3",
@@ -123,7 +123,7 @@
     "model": "California",
     "type": "Convertible",
     "price": 799,
-    "image": "/images/pathfilename"
+    "image": "/images/ferrari-488gtb.jpg"
   },
   {
     "id": "bIBwtlieZU",
@@ -132,7 +132,7 @@
     "model": "488 GTB",
     "type": "Coupe",
     "price": 799,
-    "image": "/images/pathfilename"
+    "image": "/images/ferrari-aperta.jpg"
   },
   {
     "id": "7bFb3FFwsW",
@@ -141,7 +141,7 @@
     "model": "458 Italia",
     "type": "Coupe",
     "price": 799,
-    "image": "/images/pathfilename"
+    "image": "/images/ferrari-458-italia.jpg"
   },
   {
     "id": "3jCTkADJgf",
@@ -159,7 +159,7 @@
     "model": "AMG GT",
     "type": "Coupe",
     "price": 399,
-    "image": "/images/pathfilename"
+    "image": "/images/mercedes-maybach-s-class.webp"
   },
   {
     "id": "ETWwc6EAl8",
@@ -186,7 +186,7 @@
     "model": "SLS AMG",
     "type": "Coupe",
     "price": 499,
-    "image": "/images/pathfilename"
+    "image": "/images/mercedes.jpg"
   },
   {
     "id": "NHsqC6sKLE",
@@ -213,7 +213,7 @@
     "model": "SQ5",
     "type": "SUV",
     "price": 200,
-    "image": "/images/pathfilename"
+    "image": "/images/audir8.jpg"
   },
   {
     "id": "2CUcwBko2t",
@@ -222,7 +222,7 @@
     "model": "RS Q8",
     "type": "SUV",
     "price": 499,
-    "image": "/images/pathfilename"
+    "image": "/images/audiR8V10.jpg"
   },
   {
     "id": "iSyJDLyhUC",
@@ -231,429 +231,6 @@
     "model": "R8 Spyder",
     "type": "convertible",
     "price": 499,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "6I3A3rIyyD",
-    "make": "Audi",
-    "year": 2021,
-    "model": "RS 7 Sportback",
-    "type": "coupe",
-    "price": 299,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "64V6hlPg5n",
-    "make": "Audi",
-    "year": 2021,
-    "model": "RS e-tron GT",
-    "type": "coupe",
-    "price": 399,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "uKnWAqjnFe",
-    "make": "McLaren",
-    "year": 2018,
-    "model": "570S",
-    "type": "Coupe, Convertible",
-    "price": 1300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "udh64Wr38H",
-    "make": "McLaren",
-    "year": 2017,
-    "model": "570GT",
-    "type": "Coupe",
-    "price": 1300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "4rO7nnzTxD",
-    "make": "McLaren",
-    "year": 2016,
-    "model": "650S",
-    "type": "Convertible, Coupe",
-    "price": 1300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "cs4sP1pp15",
-    "make": "McLaren",
-    "year": 2014,
-    "model": "MP4-12C",
-    "type": "Coupe, Convertible",
-    "price": 1300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "dmtX6KQBKR",
-    "make": "McLaren",
-    "year": 2018,
-    "model": "720S",
-    "type": "Coupe",
-    "price": 1300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "DnvzUtoFGu",
-    "make": "McLaren",
-    "year": 2016,
-    "model": "675LT",
-    "type": "Coupe",
-    "price": 1300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "xQhA2imJUN",
-    "make": "McLaren",
-    "year": 2018,
-    "model": "570GT",
-    "type": "Coupe",
-    "price": 1300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "erZl2UVre0",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "ES",
-    "type": "Sedan",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "ZZ96xi0JoH",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "LC",
-    "type": "Coupe,Convertible",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "J1ZpuJQWkg",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "LX",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "0C43khKtgR",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "GX",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "GVzHH79xa6",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "IS",
-    "type": "Sedan",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "ENjF7iettw",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "NX",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "N18m0TTBzT",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "LS",
-    "type": "Sedan",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "V0ivx30qHK",
-    "make": "Lexus",
-    "year": 2021,
-    "model": "RC",
-    "type": "Coupe",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "O1iqTzwSl2",
-    "make": "Tesla",
-    "year": 2019,
-    "model": "Model 3",
-    "type": "Sedan",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "YGYHcyXvfO",
-    "make": "Tesla",
-    "year": 2021,
-    "model": "Model X",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "LwH8Kwr6x7",
-    "make": "Tesla",
-    "year": 2021,
-    "model": "Model S",
-    "type": "Sedan",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "ghbMUP8Pen",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "911",
-    "type": "Coupe,Convertible",
-    "price": 500,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "Dhhu1wuiEJ",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "718 Boxster",
-    "type": "Convertible",
-    "price": 500,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "eBtjn02Ulz",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "718 Spyder",
-    "type": "Convertible",
-    "price": 500,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "bYSRRcZdbP",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "Taycan",
-    "type": "Sedan",
-    "price": 300,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "eiNH4FPtAz",
-    "make": "Porsche",
-    "year": 2018,
-    "model": "911",
-    "type": "Coupe",
-    "price": 500,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "YjL7zDLitf",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "Cayenne",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "451TZBhIBk",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "Panamera",
-    "type": "Sedan",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "TWCNG3bwNm",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "718 Cayman",
-    "type": "Coupe",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "Lmjounk2rk",
-    "make": "Porsche",
-    "year": 2021,
-    "model": "Macan",
-    "type": "SUV",
-    "price": 199,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "mPYLA0lCwJ",
-    "make": "Lamborghini",
-    "year": 2014,
-    "model": "Gallardo",
-    "type": "Coupe, Convertible",
-    "price": 900,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "MyoyXpd3uO",
-    "make": "Lamborghini",
-    "year": 2018,
-    "model": "Huracan",
-    "type": "Coupe",
-    "price": 900,
-    "image": "/images/huracan.jpg"
-  },
-  {
-    "id": "zGchNFd63n",
-    "make": "Lamborghini",
-    "year": 2018,
-    "model": "Aventador",
-    "type": "Convertible, Coupe",
-    "price": 900,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "f64AMDv9nH",
-    "make": "Bentley",
-    "year": 2021,
-    "model": "Continental GT",
-    "type": "coupe",
-    "price": 900,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "X69B6CRfTt",
-    "make": "Bentley",
-    "year": 2021,
-    "model": "Flying Spur",
-    "type": "coupe",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "4DOoOaa2pQ",
-    "make": "Bentley",
-    "year": 2021,
-    "model": "Mulsanne",
-    "type": "coupe",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "B7YQ0l7F1I",
-    "make": "Bentley",
-    "year": 2021,
-    "model": "Bentayga",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/bentayga1.jpg"
-  },
-  {
-    "id": "cY7lXXOD1b",
-    "make": "Land Rover",
-    "year": 2021,
-    "model": "Range Rover Sport",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "qJJEzSgQSd",
-    "make": "Land Rover",
-    "year": 2021,
-    "model": "Range Rover Velar",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "5h6faNuQaH",
-    "make": "Land Rover",
-    "year": 2021,
-    "model": "Range Rover",
-    "type": "SUV",
-    "price": 200,
-    "image": "/images/rangerover"
-  },
-  {
-    "id": "h9BxDbA148",
-    "make": "Rolls-Royce",
-    "year": 2018,
-    "model": "Dawn",
-    "type": "Convertible",
-    "price": 200,
-    "image": "/images/dawn.jpg"
-  },
-  {
-    "id": "KzorgjbbtD",
-    "make": "Rolls-Royce",
-    "year": 2018,
-    "model": "Ghost",
-    "type": "Sedan",
-    "price": 900,
-    "image": "/images/ghost.jpg"
-  },
-  {
-    "id": "vxjJPpRl1l",
-    "make": "Rolls-Royce",
-    "year": 2018,
-    "model": "Wraith",
-    "type": "Coupe",
-    "price": 900,
-    "image": "/images/wraith.jpg"
-  },
-  {
-    "id": "djSMkAaazw",
-    "make": "Rolls-Royce",
-    "year": 2018,
-    "model": "Phantom",
-    "type": "Sedan",
-    "price": 900,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "rJibmHDsdA",
-    "make": "Maserati",
-    "year": 2018,
-    "model": "GranTurismo",
-    "type": "Coupe, Convertible",
-    "price": 700,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "7uJ28GeoIE",
-    "make": "Maserati",
-    "year": 2018,
-    "model": "Levante",
-    "type": "SUV",
-    "price": 700,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "AjqzScoRcA",
-    "make": "Maserati",
-    "year": 2019,
-    "model": "Ghibli",
-    "type": "Sedan",
-    "price": 700,
-    "image": "/images/pathfilename"
-  },
-  {
-    "id": "K6poOFBbxi",
-    "make": "Maserati",
-    "year": 2019,
-    "model": "Levante",
-    "type": "SUV",
-    "price": 700,
-    "image": "/images/pathfilename"
+    "image": "/images/audiR81.png"
   }
 ]

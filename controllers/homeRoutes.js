@@ -20,6 +20,7 @@ router.get("/", async (req, res) => {
     console.log("This is logged in", req.session.logged_in);
     // Serialize data so the template can read it
     const cars = dbCarData.map((car) => car.get({ plain: true }));
+    console.log(cars, 'carf')
     // Pass serialized data and session flag into template
     res.render("homepage", {
       cars,
