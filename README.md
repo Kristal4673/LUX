@@ -10,7 +10,6 @@ Node-based application for an car rental  business, which cconsists of a full st
 * [Usage](#usage)
 * [Contribution](#contribution)
 * [License](#license)
-* [Questions](#questions)
 
 ## Installation
 To install project, simply clone repository or download documents and save them to your computer. 
@@ -55,9 +54,4 @@ MIT
       LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
       OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
       SOFTWARE.
-## Questions
-Use information below to contact me for questions or future collaboration.
-<br/>
-GitHub: https://github.com/josemartin357
-<br/>
-Email: martin.bedoya2021@gmail.com
+
