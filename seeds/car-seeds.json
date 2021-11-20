@@ -258,7 +258,7 @@
     "model": "GX",
     "type": "SUV",
     "price": 200,
-    "image": "/images/LexusNX1.jpg"
+    "image": "/images/lexusgx1.png"
   },
   {
     "id": "GVzHH79xa6",
@@ -267,7 +267,7 @@
     "model": "IS",
     "type": "Sedan",
     "price": 200,
-    "image": "/images/Lexus-IS-350.png"
+    "image": "/images/is350.png"
   },
   {
     "id": "ENjF7iettw",
@@ -276,7 +276,7 @@
     "model": "NX",
     "type": "SUV",
     "price": 200,
-    "image": "/images/lexusNX1.jpg"
+    "image": "/images/lexus-nx1.jpg"
   },
   {
     "id": "N18m0TTBzT",
@@ -321,7 +321,7 @@
     "model": "Taycan",
     "type": "Sedan",
     "price": 300,
-    "image": "/images/PorscheTaycan.jpg"
+    "image": "/images/porschetaycan.jpg"
   },
   {
     "id": "eiNH4FPtAz",
