@@ -11,14 +11,7 @@ Reservation.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // starting_date: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    // },
-    // ending_date: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    // },
+
     description: {
       type: DataTypes.STRING,
     },

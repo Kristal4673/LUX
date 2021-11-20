@@ -19,14 +19,10 @@
         <nav class="navbar">
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
-            {{! <a href="/">User logged-in</a> }}
-            {{! MB: TESTING RESERVATION LINK ONCE LOGGED IN/NEEDS TO BE ADJUSTED ONCE "BOOK" BUTTON CREATED }}
-            {{! <a href="/reservation">Once logged-in:Book</a> }}
+
             <button class="no-button" id="logout">Logout</button>
           {{else}}
-            {{! MB: TESTING RESERVATION LINK BEFORE LOGGED IN/NEEDS TO BE ADJUSTED ONCE "BOOK" BUTTON CREATED}}
-            {{! <a href="/reservation">Before Log-In:Book</a> }}
-            |
+
             <a href="/login">Log In/Sign Up</a>
           {{/if}}
         </nav>

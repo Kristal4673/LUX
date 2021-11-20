@@ -9,31 +9,11 @@
     <h3>Your information on file:</h3>
 
     <form class="form new-reservation-form">
-      {{!-- <div class="form-group">
-        <label for="reservation-name">Name as it appears in your driver's license:</label>
-        <input
-          class="form-input"
-          type="text"
-          id="reservation-name"
-          name="reservation-name"
-          placeholder="First and last name"
-        />
-      </div>  --}}
+
 
  <div class="form-group">
    <p>Name: {{name}}</p>
       </div>
-
-      {{!-- <div class="form-group">
-        <label for="reservation-email">Email:</label>
-        <input
-          class="form-input"
-          type="text"
-          id="reservation-email"
-          name="reservation-email"
-          placeholder="In case we need to reach you"
-        />
-      </div> --}}
 
 
  <div class="form-group">
@@ -119,28 +99,5 @@
     </form>
   </div>
 
-
-  
-{{!-- 
-  {{#if projects.length}}
-    <div class="col-md-6 project-list">
-      <h3>Current Projects:</h3>
-
-      {{#each projects as |project|}}
-        <div class="row mb-2">
-          <div class="col-md-8">
-            <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
-          </div>
-          <div class="col-md-4">
-            <button
-              class="btn btn-sm btn-danger"
-              data-id="{{project.id}}"
-            >DELETE</button>
-          </div>
-        </div>
-      {{/each}}
-    </div>
-  {{/if}}
-</div> --}}
 
 <script src="/js/reservation.js"></script>
