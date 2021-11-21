@@ -4,6 +4,10 @@
 ## Description:
 Node-based application for an car rental  business, which cconsists of a full stack application created with express, mysql and sequelize through model/controller/view design pattern.
 
+## Link for deployed application in Heroku:
+
+https://lux-rentals.herokuapp.com/
+
 ## Table of Contents
 * [Installation](#installation)
 * [Technologies Used](#builtwith)
