@@ -2,7 +2,7 @@
 ![License: MIT](https://img.shields.io/apm/l/vim-mode?style=for-the-badge)
 
 ## Description:
-Node-based application for an car rental  business, which cconsists of a full stack application created with express, mysql and sequelize through model/controller/view design pattern.
+Node-based application for an car rental  business, which consists of a full stack application created with express, mysql and sequelize through model/controller/view design pattern.
 
 ## Link for deployed application in Heroku:
 
